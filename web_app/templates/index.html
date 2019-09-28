@@ -1,0 +1,39 @@
+<html>
+    <head>
+            
+        <style>
+        #my_camera{
+            width: 320px;
+            height: 180px;
+            order: 1px solid black;
+        }
+        </style>
+</head>
+<body>
+
+
+        <div id="my_camera"></div>
+            <input type=button value="Take Snapshot" onClick="take_snapshot()">
+            <input type=button value="Save Snapshot" onClick="saveSnap()">
+            
+            <div id="results" ></div>
+            
+            <script type="text/javascript" src="../../../webcamjs-master/webcam.js"></script>
+
+            <script type="text/javascript" src="app.js"></script>
+
+
+            <!-- <script language="php">
+                // new filename
+                $filename = 'pic_'.date('YmdHis') . '.jpeg';
+
+                $url = '';
+                if( move_uploaded_file($_FILES['webcam']['tmp_name'],'upload/'.$filename) ){
+                $url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['REQUEST_URI']) . '/upload/' . $filename;
+                }
+                // Return image url
+                echo $url;
+            </script> -->
+
+    </body>
+</html>

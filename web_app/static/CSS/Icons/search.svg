@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="611.99" height="615.52" viewBox="0 0 611.99 615.52">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#006ac3"/>
+      <stop offset="1" stop-color="#01fe6f"/>
+    </linearGradient>
+  </defs>
+  <g id="search" transform="translate(-1.765)">
+    <g id="Group_42" data-name="Group 42">
+      <g id="Search__x28_and_thou_shall_find_x29_">
+        <g id="Group_41" data-name="Group 41">
+          <path id="Path_11" data-name="Path 11" d="M602.531,549.736,418.221,364.368A230.455,230.455,0,0,0,460.749,230.82C460.75,103.35,358,0,231.258,0S1.765,103.35,1.765,230.82,104.518,461.64,231.258,461.64a227.366,227.366,0,0,0,132.78-42.777l184.31,185.366a38.149,38.149,0,0,0,54.185,0A38.685,38.685,0,0,0,602.531,549.736ZM355.9,319.763l-15.042,21.273L319.7,356.174A151.242,151.242,0,0,1,231.258,384.7c-84.365,0-152.995-69.035-152.995-153.88S146.893,76.94,231.258,76.94s153,69.034,153,153.88A153.1,153.1,0,0,1,355.9,319.763Z" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

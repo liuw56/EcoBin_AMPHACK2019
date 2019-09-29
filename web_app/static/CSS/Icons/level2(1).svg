@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="381" height="47" viewBox="0 0 381 47">
+  <defs>
+    <filter id="Rectangle_2" x="0" y="0" width="381" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1.752" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#006ac3"/>
+      <stop offset="1" stop-color="#01fe6f"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_41" data-name="Group 41" transform="translate(-25 -154)">
+    <g id="Group_3" data-name="Group 3" transform="translate(34 160)">
+      <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_2)">
+        <rect id="Rectangle_2-2" data-name="Rectangle 2" width="363" height="29" rx="14.5" transform="translate(9 6)" fill="rgba(173,173,173,0.21)"/>
+      </g>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="191" height="29" rx="14.5" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="_250_RBC_Points" data-name="250 RBC Points" transform="translate(320 179)" fill="#707070" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">20exp left</tspan></text>
+    <text id="_250_RBC_Points-2" data-name="250 RBC Points" transform="translate(102 179)" fill="#fff" font-size="12" font-family="MuseoSansRounded-500, "Museo Sans Rounded 500"" font-weight="500"><tspan x="0" y="0">60%</tspan></text>
+  </g>
+</svg>

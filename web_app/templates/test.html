@@ -1,0 +1,36 @@
+<html>
+    <head>
+            
+        <style>
+        #my_camera{
+            width: 320px;
+            height: 180px;
+            order: 2px solid black;
+        }
+        </style>
+</head>
+<body>
+
+
+        <div id="my_camera"></div>
+            <input type=button value="Take Snapshot" onClick="take_snapshot()">
+            <input id="save" type=button value="Save Snapshot" onclick="saveredirect">
+            
+            <input id="redirect" type=button value="redirect">
+
+            <div id="results" >
+
+            </div>
+            
+            <h3>Material Type: </h3>
+        <div>{{ type_trash }}</div>
+        <script  type="text/javascript" src="{{ url_for('static', filename='JS/webcam.min.js') }}"> </script>
+        <script type="text/javascript" src="{{ url_for('static', filename='JS/app.js') }}"> </script>
+
+        <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>            
+
+            
+
+    </body>
+</html>

@@ -18,7 +18,9 @@ Webcam.set({
     
   }
 
-  
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  };
   
   save.onclick= function saveSnap(){
    // Get base64 value from <img id='imageprev'> source
@@ -33,16 +35,12 @@ Webcam.set({
      url: img_url,
      cache:false,
      data:formdData});
-  //    success: function
-  //   //  function(data){  
-  //   //   console.log(data);     
+     
+     (function relocate(){
+      window.location.replace("http://localhost:9999/")
+    })();
+  };
 
-  //   //   var d = data_uri;
-  //   //  data: JSON.stringify({
-  //   //    image: "stringify(data_uri)"
-  //   //  }) 
-  // //  }
-  //   //  success:
-  // });
-  
-  }
+  redirect.onclick= function relocate(){
+    window.location.replace("http://localhost:9999/")
+  };

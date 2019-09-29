@@ -6,21 +6,43 @@ Webcam.set({
     jpeg_quality: 90
    });
    Webcam.attach( '#my_camera' );
-  
+  var da;
   function take_snapshot() {
    // take snapshot and get image data
    Webcam.snap( function(data_uri) {
+    da = data_uri;
     // display results in page
     document.getElementById('results').innerHTML = '<img id="imageprev" src="'+data_uri+'"/>';
+    // document.write(data_uri);
     } );
+    
   }
+
   
-  function saveSnap(){
+  
+  save.onclick= function saveSnap(){
    // Get base64 value from <img id='imageprev'> source
-   var base64image = document.getElementById("imageprev").src;
+   var img_url = "http://localhost:9999/api/";
+   var formdData = new FormData();
+   formdData.append("image",da);
+  //  document.write(da)
+   $.ajax({ 
+     type: 'POST',
+     contentType: false,
+     processData: false,
+     url: img_url,
+     cache:false,
+     data:formdData});
+  //    success: function
+  //   //  function(data){  
+  //   //   console.log(data);     
+
+  //   //   var d = data_uri;
+  //   //  data: JSON.stringify({
+  //   //    image: "stringify(data_uri)"
+  //   //  }) 
+  // //  }
+  //   //  success:
+  // });
   
-   Webcam.upload( base64image, 'upload.php', function(code, text) {
-    console.log('Save successfully');
-    //console.log(text);
-   });
   }

@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/api/', methods=['POST'])
 def makecalc():
-    data = request.get_json()
+    data = request.form
     #prediction = np.array2string(model.predict(data))
     #return jsonify(prediction)
     print(data)

@@ -5,9 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
-      <link rel="stylesheet" href="master.css">
-      <link rel="stylesheet" href="info.css">
-  <link rel="stylesheet" href="https://use.typekit.net/hse1lum.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hse1lum.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/info.css') }}">
+    
+      
+
 </head>
 
 <body>
@@ -17,7 +20,7 @@
 
     <div class="bincontainer">
       <h1>Bin Location </h1>
-      <h3>Material Type:</h3>
+      <h3>Material Type: {{ type_trash }}</h3>
       <form action="/action_page.php">
     <input type="text" id="fname" name="firstname" placeholder="Tell us what the object is? Cup, lid etc.">
 

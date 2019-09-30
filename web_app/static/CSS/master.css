@@ -30,7 +30,126 @@ a {
 
 
 
+.location{
 
+  grid-column: 4;
+  grid-row: 1;
+  background-size: contain;
+  background-image: url("icons/location.svg");
+  background-repeat:no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: 40%;
+  cursor: pointer;
+
+
+
+
+
+}
+
+
+.camerasearch {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 3;
+
+  width: 100%;
+  height: 100%;
+
+
+  /* background-color:grey; */
+
+}
+
+.camerasearchman {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
+margin-top:20px;
+  width: 100%;
+  height: 100%;
+
+
+  /* background-color:grey; */
+
+}
+
+
+.cameraicon {
+  background-size: contain;
+  background-image: url("icons/logo.svg");
+  background-repeat:no-repeat;
+  width: 120px;
+  height: 120px;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row:1;
+  margin:auto;
+
+
+}
+
+.logo2 {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-size: contain;
+  background-image: url("icons/logo2.svg");
+  background-repeat:no-repeat;
+  width: 120px;
+  height: 120px;
+  margin:auto;
+}
+
+.start {
+  
+  width: 100px;
+  text-align: center;
+  height: 20px;
+  padding: 8px;
+  background-color:white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+  font-family: museo-sans-rounded, sans-serif;
+  color:#1ED56D;
+
+}
+input[type=text], select {
+  width: 65%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  font-size: 10px;
+  display: inline-block;
+  border: 1px solid white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+    border-radius: 25px;
+margin-left: 40px;
+z-index:-1;
+
+
+}
+
+input[type=submit] {
+  width: 90px;
+  background-color: #1ED56D;
+  color: white;
+  padding: 8px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
 
 .box {
 margin-top: 20px;
@@ -41,25 +160,106 @@ margin-top: 20px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
 
     background-color:white;
+    font-family: museo-sans-rounded, sans-serif;
+    color: grey;
 
 
 }
 
+.searchicon {
+  background-size: contain;
+  background-repeat: no-repeat;
+    background-image: url("icons/search.svg");
+  width: 20px;
+  height: 20px;
+  margin-left: 88%;
+  margin-top:-35px;
+  cursor:pointer;
+
+}
+
+.levelshow {
+  background-size: contain;
+  background-repeat: no-repeat;
+    background-image: url("icons/level.svg");
+  width: 180px;
+  height: 22px;
+  float:right;
+  margin-top: -20px;
+}
+
+.levelcontainer p {
+  margin-left: 80%;
+  padding:0;
+  font-size: 10px;
+
+}
+
+.levelcontainer2 {
+
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 2;
+
+  width: 100%;
+  height: 60px;
+}
+
+.levelcontainer2 p {
+  margin-left: 75%;
+  padding:0;
+  font-size: 10px;
+
+}
+
+.tell {
+  padding: 20px;
+  height: 60px;
+  width: 300px;
+  border-radius: 25px;
+box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+margin-left: 40px;
+margin-top: 50px;
+
+}
+
+.levelshow2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+    background-image: url("icons/level.svg");
+  width: 400px;
+  height: 50px;
+  float:right;
+  margin-top: 0px;
+}
+
+.level p{
+  margin-left: 10%;
+}
+
+.leve {
+
+  padding-top: 10px;
+
+}
+
 .viewmore {
-  width: 80px;
+  width: 75px;
   height: 14px;
   font-size: 15px;
   padding: 10px;
-    font-family: museo-sans-rounded, sans-serionf;
+    font-family: museo-sans-rounded, sans-serif;
   background-color: #1ED56D;
   border-radius: 16px;
   text-align: center;
   color:white;
 
-  margin-right: 20px;
-  margin-top: 10px;
 
-  float:right;
+  margin-top: 10px;
+  cursor:pointer;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+
 }
 
 .container {
@@ -74,11 +274,11 @@ margin-top: 20px;
 #my_camera {
   grid-column-start: 1;
   grid-column-end: 5;
-  grid-row-start: 4;
+  grid-row-start: 1;
   grid-row-end: 7;
   width: 100%;
   height: 100%;
-  background-color:red;
+  /* background-color:red; */
 
 
 
@@ -93,7 +293,6 @@ margin-top: 20px;
 
   width: 100%;
   height: 60px;
-  box-shadow:  3px 5px 7px rgba(0, 0, 0, 0.3);
 }
 
 .empty {
@@ -101,29 +300,17 @@ margin-top: 20px;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 2;
-  background-color:blue;
+  /* background-color:blue; */
 }
 
 
 
-.camerasearch {
+.selectionb {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 3;
-  grid-row-end: 3;
-
-  width: 100%;
-  height: 100%;
-  /* background-color:grey; */
-
-}
-
-.selection {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 4;
-  grid-row-end: 5;
-
+  grid-row-end: 4;
+margin:auto;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -136,16 +323,31 @@ margin-top: 20px;
   /* background-color:grey; */
 }
 
-.selectioninner {
+.selection {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+margin:auto;
 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-rows: 10% 70% 20%;
+
+  width: 80%;
+  padding: 5%;
+  height: 80%;
+  /* background-color:grey; */
 }
+
 
 .selection2 {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 5;
   grid-row-end: 5;
-
+margin:auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   display: grid;
@@ -166,6 +368,32 @@ margin-top: 20px;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 1;
+
+}
+
+.image1 {
+  background-image: url("icons/starbucks.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.image2 {
+  background-image: url("icons/burgerking.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image3 {
+  background-image: url("icons/mcdonalds.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image4 {
+  background-image: url("icons/tims.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .ontotwothree {
@@ -176,7 +404,7 @@ margin-top: 20px;
       grid-row-end: 3;
 width: 100%;
 height: 100%;
-background-color:red;
+/* background-color:red; */
 
 }
 
@@ -206,7 +434,7 @@ background-color:red;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row: 6;
-   background-color: green;
+   /* background-color: green; */
 }
 
 .bottom {
@@ -282,4 +510,11 @@ background-color:red;
 
   background-image: url("icons/user.svg");
 
+}
+
+.user {
+  color:white;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #006AC3 0%, #01FE6F 100%);
 }

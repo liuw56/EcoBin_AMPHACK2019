@@ -11,9 +11,9 @@ Webcam.set({
    // take snapshot and get image data
    Webcam.snap( function(data_uri) {
     da = data_uri;
-    // display results in page
     document.getElementById('results').innerHTML = '<img id="imageprev" src="'+data_uri+'"/>';
-    // document.write(data_uri);
+
+    // display results in page
     } );
     
   }
@@ -22,9 +22,9 @@ Webcam.set({
     return new Promise(resolve => setTimeout(resolve, ms));
   };
   
-  save.onclick= function saveSnap(){
+  function saveSnap(){
    // Get base64 value from <img id='imageprev'> source
-   var img_url = "http://localhost:9999/api/";
+   var img_url = "http://localhost:9999/api";
    var formdData = new FormData();
    formdData.append("image",da);
   //  document.write(da)
@@ -35,12 +35,26 @@ Webcam.set({
      url: img_url,
      cache:false,
      data:formdData});
-     
-     (function relocate(){
-      window.location.replace("http://localhost:9999/")
-    })();
+    //  window.location.replace("http://localhost:9999/pridict")
+    //  (function relocate(){
+    //   window.location.replace("http://localhost:9999/")
+    // })();
   };
 
-  redirect.onclick= function relocate(){
-    window.location.replace("http://localhost:9999/")
-  };
+  // function goHomepage(){
+  //   window.location.redirct("http://localhost:9999/")
+  // };
+
+  // function goCamera(){
+  //   window.location.redirct("http://localhost:9999/cancel")
+  // };
+
+  // function goInfo(){
+  //   window.location.redirct("http://localhost:9999/predict")
+  // };
+
+  
+
+  // redirect= function relocate(){
+  //   window.location.replace("http://localhost:9999/")
+  // };

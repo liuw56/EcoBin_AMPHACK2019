@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
-      <link rel="stylesheet" href="master.css">
-  <link rel="stylesheet" href="https://use.typekit.net/hse1lum.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+    <link rel="stylesheet" href="https://use.typekit.net/hse1lum.css">
 </head>
 
 <body>
 
   <div class= "container">
     <div id="my_camera">
-      <input type=button value="Take Snapshot" onClick="take_snapshot()">
-                 <input id="save" type=button value="Save Snapshot">
-
     </div>
+    <input type=button value="Take Snapshot" onClick="take_snapshot()">
+    <input id="save" type=button value="Save Snapshot" onclick="saveSnap()">
+    <div id="results"></div>
 
 
 
@@ -24,13 +24,13 @@
     <div class="bottom">
 
       <div class= "holder1">
-          <a href="index.html">
+          <a href="http://localhost:9999/">
             <div class=" icons home"2></div>
           </a>
       </div>
 
       <div class= "holder2">
-          <a href="camera.html"><div class=" icons camera "></div></a>
+          <a href="http://localhost:9999/cancel"><div class=" icons camera "></div></a>
     </div>
 
         <div class= "holder3">
@@ -40,24 +40,19 @@
         </div>
 
         <div class= "holder4">
-          <a href="profile.html">
+          <a href="http://localhost:9999/profile">
               <div class=" icons profile"></div>
           </a>
         </div>
     </div>
 
   </div>
+  <script  type="text/javascript" src="{{ url_for('static', filename='js/webcam.min.js') }}"> </script>
 
+  <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"> </script>
 
-  <script  type="text/javascript" src="{{ url_for('static', filename='JS/webcam.min.js') }}"> </script>
-  <script type="text/javascript" src="{{ url_for('static', filename='JS/app.js') }}"> </script>
-
-  <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-  <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>            
-
-
-
-
+        <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script> 
 </body>
 
 </html>

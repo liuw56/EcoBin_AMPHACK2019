@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
-      <link rel="stylesheet" href="master.css">
-  <link rel="stylesheet" href="https://use.typekit.net/hse1lum.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+    <link rel="stylesheet" href="https://use.typekit.net/hse1lum.css">
 </head>
 
 <body style ="background: rgb(235,243,250);
@@ -20,21 +20,29 @@ background: linear-gradient(180deg, #4091D0 0%, #40F697 100%);">
             font-weight: 700;">ECOBIN</h1>
       </div>
 
-      <h2 style="grid-column-start: 2;grid-column-end:5;grid-row-start:3; grid-row-end:3; width: 200px; text-align:center;">Start your recycling habits with  RBC & gain award points
+      <h2 style="grid-column-start: 2;grid-column-end:5;grid-row-start:4; grid-row-end:4; width: 200px; margin-top:50px; text-align:center; color:white;">Start your recycling habits with  RBC & gain award points
 by sorting your garbage
 with your camera</h2>
 
-      <div class ="start">
+      <a href="http://localhost:9999/" style ="grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 5;
+      grid-row-end:5;
+      margin:auto;"><div class ="start">
           LETS START
+      </div></a>
+
+      <div class="bottom2" style="margin-left: 0px;grid-column-start: 2; grid-column-end: 4;grid-row-start:6; grid-row-end:6;text-align:center; color:none; font-family:museo-sans-rounded, sans-serif; color:#006AC3;">Create Account</div>
+
+
       </div>
 
-      <div class="buttom"><a href="">Create Account</a></div>
 
+      <script type="text/javascript" src="{{ url_for('static', filename='JS/app.js') }}"> </script>
+      <script  type="text/javascript" src="{{ url_for('static', filename='JS/webcam.min.js') }}"> </script>
 
-      </div>
-
-
-
+      <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+      <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script> 
 
 
 

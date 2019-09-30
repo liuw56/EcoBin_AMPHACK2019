@@ -32,6 +32,10 @@ def get_prediction(learn):
 def try_it():
     return render_template('test.html')
 
+app.route('/menu')
+def menu():
+    return render_template('manual.html')
+
 @app.route('/api', methods=['POST'])
 def model_predict():
     data = request.form.get("image").replace('data:image/jpeg;base64,','')
